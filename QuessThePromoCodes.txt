@@ -1,10 +1,10 @@
-var mainCode='WPISZKOD';
-var code1=mainCode; //+ obecny
-var code2=mainCode;//- obecny
-var code=mainCode;//calosc
+var mainCode='CODEHERE';
+var code1=mainCode; //+ will be there
+var code2=mainCode;//- will be there
+var code=mainCode;//finally code
 var num1=0;  //1 if
 var num2=0;  //2 if
-var number=''; //num do stringa
+var number=''; //num to string
 
 for(num1=0;num1<10;num1++){
 number=num1.toString();
@@ -13,7 +13,7 @@ code2=code;
 	for(num2=0;num2<10;num2++){
 		number=num2.toString();
 		code = code2.replace('-',number);
-    		$1.value = code; // $1 textbox
+    		$1.value = code; // $1 textbox     
 		$0.click();      // $0 submit
 	}
 }
